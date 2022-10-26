@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0d243c;
+    
+}
+
+.area-dos-dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: inline-block;
+  
+}
+.area-do-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    height: 100%;
+    
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-topo{
+    color: #fff;
+    margin: 5px;
+}
+
+.inserir-dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width:500px;
+    height: 250px;
+    color: #fff;
+    background-image: url("https://img.freepik.com/fotos-premium/3d-render-plataforma-roxa-e-rosa-escura-com-aneis-de-vidro-transparentes-e-brilhantes-de-neon-composicao-de-formas-geometricas-com-espaco-vazio-para-show-de-design-de-produto_350912-203.jpg?w=740");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.cartao-gerado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height: 250px;
+    transition: transform 1s;
+
+}
+
+.cartao-gerado:hover{
+    transform: rotate(-20deg);
+}
+
+.centralizar-area-dos-dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #000;
+}
+.centralizar-area-titulo{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+ 
+}
+.dados{
+    padding: 10px;
+    width: 328px;
+    height: 200px;
+    border-radius: 8px;
+    
+}
+
+.dados input{
+    width: 320px;
+    height: 28px;
+    border-radius: 2px;
+    border: none;
+    outline: 0;
+}
+
+.dados button{
+    width: 120px;
+    height: 35px;
+    background-color: #0d243c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.dados button:hover{
+    background-color: #044080;
+}
+
+.cartão{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 9%, rgba(9,121,26,1) 100%, rgba(3,79,82,1) 100%, rgba(0,212,255,1) 100%, rgba(4,42,33,1) 100%);
+    width: 328px;
+    height: 200px;
+    border-radius: 12px;  
+}
+
+.topo{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin: 10px;
+    height: 50px;
+   
+}
+.sensor{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center; 
+}
+
+.sensor img{
+    width: 22px;
+    color: #fff;
+    transform: rotate(90deg);
+}
+.bandeira{
+    float: right;
+    width: 50px;
+}
+.bandeira img{
+    width: 50px;
+}
+.meio{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    height: 50px;
+    color: #fff;
+}
+.numero-cartao{
+    display: flex;
+    height: 100%;
+    justify-content: left;
+    align-items: flex-end;
+    font-size: 15px;
+}
+.fim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 10px;
+    height: 50px;
+    color: #fff;
+}
+.fim p{
+    font-size: 10px;
+}
+.dados-titular{
+    width: 150px;
+    height: 100%;
+    
+}
+.data-expirar{
+    float: center;
+    width: 100px;
+    height: 100%;
+    
+}
+.cvv{
+    width: 100px;
+    height: 100%;
+   
+}
+
+.chip{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 150px;
+ 
+}
+@media screen and (min-width: 375px) and (max-width: 500px) {
+	
+}
