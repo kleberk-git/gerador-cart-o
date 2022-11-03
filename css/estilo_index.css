@@ -58,10 +58,46 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width:500px;
     height: 250px;
     transition: transform 1s;
 
+
+
+}
+.cores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 100%;
+
+}
+
+.cores button{
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+#cor1{
+    background-image: radial-gradient(circle at 87.5% 12.5%, #ff9000 0, #ff7a00 12.5%, #ff6319 25%, #ff482a 37.5%, #ff2833 50%, #ea0039 62.5%, #d6003e 75%, #c40043 87.5%, #b40049 100%);
+}
+#cor2{
+    background-image: radial-gradient(circle at 80.42% 6.56%, #b175ff 0, #6c5bff 25%, #0040d7 50%, #0026a0 75%, #00106f 100%);
+}
+#cor3{
+    background-image: radial-gradient(circle at 87.5% 12.5%, #a3f300 0, #7fec00 16.67%, #55e200 33.33%, #00d705 50%, #00cb26 66.67%, #00c037 83.33%, #00b645 100%);
+}
+#cor4{
+    background-image: radial-gradient(circle at 80.42% 6.56%, #ff00d9 0, #ff00e1 12.5%, #ff00e3 25%, #f800e0 37.5%, #cc00d7 50%, #9f14cb 62.5%, #741ec0 75%, #4523b5 87.5%, #0026ab 100%);
+}
+#cor5{
+    background-image: radial-gradient(circle at 80.42% 6.56%, #bf5aff 0, #7646ff 25%, #0030d7 50%, #001ca3 75%, #000574 100%);
 }
 
 .cartao-gerado:hover{
@@ -91,8 +127,7 @@ body{
     padding: 10px;
     width: 328px;
     height: 200px;
-    border-radius: 8px;
-    
+    border-radius: 8px; 
 }
 
 .dados input{
@@ -116,11 +151,12 @@ body{
     background-color: #044080;
 }
 
-.cartão{
-    background: linear-gradient(180deg, rgba(2,0,36,1) 9%, rgba(9,121,26,1) 100%, rgba(3,79,82,1) 100%, rgba(0,212,255,1) 100%, rgba(4,42,33,1) 100%);
+.cartao{
+    border: 1px solid #fff;
     width: 328px;
     height: 200px;
-    border-radius: 12px;  
+    border-radius: 12px; 
+    transition: back
 }
 
 .topo{
@@ -198,8 +234,4 @@ body{
     justify-content: center;
     align-items: flex-start;
     height: 150px;
- 
-}
-@media screen and (min-width: 375px) and (max-width: 500px) {
-	
 }
