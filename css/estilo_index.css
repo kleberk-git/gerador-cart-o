@@ -60,11 +60,13 @@ body{
     align-items: center;
     flex-direction: column;
     width:500px;
-    height: 250px;
-    transition: transform 1s;
+    height: 250px; 
+    perspective: 1000px; 
+    position: relative;
+}
 
-
-
+.cartao-gerado:hover .flip{
+    transform: rotateY(180deg);
 }
 .cores{
     display: flex;
@@ -100,9 +102,6 @@ body{
     background-image: radial-gradient(circle at 80.42% 6.56%, #bf5aff 0, #7646ff 25%, #0030d7 50%, #001ca3 75%, #000574 100%);
 }
 
-.cartao-gerado:hover{
-    transform: rotate(-20deg);
-}
 
 .centralizar-area-dos-dados{
     display: flex;
@@ -128,15 +127,26 @@ body{
     width: 328px;
     height: 200px;
     border-radius: 8px; 
+ 
 }
 
 .dados input{
-    width: 320px;
-    height: 28px;
-    border-radius: 2px;
-    border: none;
+    width: 100%;
+    padding: 5px;
     outline: 0;
+    border: 0;
+    border-radius: 2.5px;
+    border-bottom: 2px solid rgb(200,200,200);
+    font-size: 16px;
+    color: rgb(80,80,80);
+    transition: 0.5s ease-in-out;
+    background-color: #1c1c1c;
+    color: #fff;
 }
+.dados input:hover{
+    border-bottom: 2px solid greenyellow;
+}
+
 
 .dados button{
     width: 120px;
@@ -150,15 +160,56 @@ body{
 .dados button:hover{
     background-color: #044080;
 }
-
-.cartao{
+.flip{
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+    position: absolute;
+}
+.cartao-frente{
+    position: absolute;
     border: 1px solid #fff;
-    width: 328px;
+    width: 330px;
     height: 200px;
     border-radius: 12px; 
-    transition: back
+    backface-visibility: hidden;
 }
-
+.cartao-verso{
+    width: 330px;
+    height: 200px;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    border: 1px solid #fff;
+    transform: rotateY(185deg);  
+    color: #fff;
+}
+.info-verso{
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.tarja-magnetica{
+    width: 100%;
+    height: 45px;
+    background-color: #1c1c1c;
+}
+.assinatura{
+    padding: 4px;
+}
+.cvv-2{
+    margin: 2px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.tipo-cartao{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 45px;
+    margin: 4px;
+    text-align: right;
+}
 .topo{
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -166,7 +217,6 @@ body{
     align-items: flex-start;
     margin: 10px;
     height: 50px;
-   
 }
 .sensor{
     width: 60px;
@@ -221,12 +271,10 @@ body{
     float: center;
     width: 100px;
     height: 100%;
-    
 }
 .cvv{
     width: 100px;
     height: 100%;
-   
 }
 
 .chip{
