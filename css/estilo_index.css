@@ -134,6 +134,7 @@ body{
 .dados input{
     width: 100%;
     padding: 5px;
+    margin:5px;
     outline: 0;
     border: 0;
     border-radius: 2.5px;
