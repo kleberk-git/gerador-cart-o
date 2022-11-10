@@ -59,7 +59,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 8px;
+    margin: 10px;
     width:500px;
     height: 250px; 
     perspective: 1000px; 
@@ -188,6 +188,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    font-size: 11px;
 }
 .tarja-magnetica{
     width: 100%;
